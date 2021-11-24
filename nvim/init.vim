@@ -14,9 +14,9 @@ if (has('termguicolors'))
 endif
 
 set number
-let g:seoul256_background = 252
-colorscheme seoul256-light
-set background=light
+let g:seoul256_background=234
+colorscheme seoul256
+set background=dark
 set colorcolumn=80
 
 set notagrelative

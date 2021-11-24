@@ -1,17 +1,17 @@
 " Split window
-nmap ss :split<Return><C-w>w
-nmap sv :vsplit<Return><C-w>w
+nmap <C-s>s :split<Return><C-w>w
+nmap <C-s>v :vsplit<Return><C-w>w
 
 " Move around splits
 nmap <Space> <C-w>w
-map s<left> <C-w>h
-map s<up> <C-w>k
-map s<down> <C-w>j
-map s<right> <C-w>l
-map sh <C-w>h
-map sk <C-w>k
-map sj <C-w>j
-map sl <C-w>l
+map <C-s><left> <C-w>h
+map <C-s><up> <C-w>k
+map <C-s><down> <C-w>j
+map <C-s><right> <C-w>l
+map <C-s>h <C-w>h
+map <C-s>k <C-w>k
+map <C-s>j <C-w>j
+map <C-s>l <C-w>l
 
 " Copy
 vnoremap <leader>c "+y
