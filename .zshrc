@@ -1,4 +1,4 @@
-export ZSH="/home/dimitri/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="minimal"
 
 plugins=(
@@ -31,13 +31,20 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export PATH=$HOME/bin:$PATH
-export PATH=$HOME/Android/Sdk/platform-tools:$PATH
+
+# Android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # macOS
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # Debian
-source /usr/share/doc/fzf/examples/key-bindings.zsh
+#source /usr/share/doc/fzf/examples/key-bindings.zsh
 # Fedora
 #source /usr/share/fzf/shell/key-bindings.zsh
 
-source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
