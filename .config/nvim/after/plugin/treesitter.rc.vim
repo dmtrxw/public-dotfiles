@@ -4,7 +4,6 @@ if !exists('g:loaded_nvim_treesitter')
 endif
 
 lua <<EOF
-require'nvim-treesitter.install'.compilers = { "gcc-11" }
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
@@ -14,6 +13,14 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
     disable = {},
   },
-  ensure_installed = "all",
+  ensure_installed = {
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "tsx",
+    "typescript",
+    "vue"
+  },
 }
 EOF
