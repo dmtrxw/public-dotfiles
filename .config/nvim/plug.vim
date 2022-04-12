@@ -15,7 +15,9 @@ if has("nvim")
     Plug 'blackcauldron7/surround.nvim'
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'nvim-lualine/lualine.nvim'
-    Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+    Plug 'neovim/nvim-lspconfig'
+
+    Plug 'andweeb/presence.nvim'
 endif
 
 call plug#end()
