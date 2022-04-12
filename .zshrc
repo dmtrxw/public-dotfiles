@@ -11,6 +11,9 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export EDITOR=/usr/local/bin/nvim
 
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
+
 # Start zsh in NORMAL mode
 zle-line-init() {
   zle -K vicmd;
