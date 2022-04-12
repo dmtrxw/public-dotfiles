@@ -12,7 +12,6 @@ if has("nvim")
     Plug 'windwp/nvim-spectre'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'kyazdani42/nvim-tree.lua'
-    Plug 'blackcauldron7/surround.nvim'
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'nvim-lualine/lualine.nvim'
     Plug 'neovim/nvim-lspconfig'
