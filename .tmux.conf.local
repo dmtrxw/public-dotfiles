@@ -10,26 +10,26 @@ tmux_conf_theme_window_bg='default'
 tmux_conf_theme_highlight_focused_pane=false
 
 tmux_conf_theme_focused_pane_fg='default'
-tmux_conf_theme_focused_pane_bg='#87afaf'
+tmux_conf_theme_focused_pane_bg='#3C425F'
 
 tmux_conf_theme_pane_border_style=thin
 
 tmux_conf_theme_pane_border='#444444'
-tmux_conf_theme_pane_active_border='#87afaf'
+tmux_conf_theme_pane_active_border='#3C425F'
 
-tmux_conf_theme_pane_indicator='#87afaf'
-tmux_conf_theme_pane_active_indicator='#87afaf'
+tmux_conf_theme_pane_indicator='#3C425F'
+tmux_conf_theme_pane_active_indicator='#3C425F'
 
 tmux_conf_theme_message_fg='#30302c'
-tmux_conf_theme_message_bg='#d7afaf'
+tmux_conf_theme_message_bg='#82A1F1'
 tmux_conf_theme_message_attr='bold'
 
-tmux_conf_theme_message_command_fg='#d7afaf'
-tmux_conf_theme_message_command_bg='#30302c'
+tmux_conf_theme_message_command_fg='#30302c'
+tmux_conf_theme_message_command_bg='#82A1F1'
 tmux_conf_theme_message_command_attr='bold'
 
 tmux_conf_theme_mode_fg='#30302c'
-tmux_conf_theme_mode_bg='#d7afaf'
+tmux_conf_theme_mode_bg='#82A1F1'
 tmux_conf_theme_mode_attr='bold'
 
 tmux_conf_theme_status_fg='#8a8a8a'
@@ -43,8 +43,8 @@ tmux_conf_theme_window_status_bg='#080808'
 tmux_conf_theme_window_status_attr='none'
 tmux_conf_theme_window_status_format='#I #W'
 
-tmux_conf_theme_window_status_current_fg='#30302c'
-tmux_conf_theme_window_status_current_bg='#87afaf'
+tmux_conf_theme_window_status_current_fg='#82A1F1'
+tmux_conf_theme_window_status_current_bg='#3C425F'
 tmux_conf_theme_window_status_current_attr='bold'
 tmux_conf_theme_window_status_current_format='#I #W'
 
@@ -52,11 +52,11 @@ tmux_conf_theme_window_status_activity_fg='default'
 tmux_conf_theme_window_status_activity_bg='default'
 tmux_conf_theme_window_status_activity_attr='underscore'
 
-tmux_conf_theme_window_status_bell_fg='#d7afaf'
+tmux_conf_theme_window_status_bell_fg='#30302c'
 tmux_conf_theme_window_status_bell_bg='default'
 tmux_conf_theme_window_status_bell_attr='blink,bold'
 
-tmux_conf_theme_window_status_last_fg='#87afaf'
+tmux_conf_theme_window_status_last_fg='#3C425F'
 tmux_conf_theme_window_status_last_bg='default'
 tmux_conf_theme_window_status_last_attr='none'
 
@@ -69,10 +69,10 @@ tmux_conf_theme_status_left=' ❐ #S |'
 tmux_conf_theme_status_right=''
 
 tmux_conf_theme_status_left_fg='#30302c,#e4e4e4,#e4e4e4'
-tmux_conf_theme_status_left_bg='#d7afaf,#ff00af,#00afff'
+tmux_conf_theme_status_left_bg='#82A1F1,#ff00af,#00afff'
 tmux_conf_theme_status_left_attr='bold,none,none'
 
-tmux_conf_theme_status_right_fg='#8a8a8a,#e4e4e4,#30302c'
+tmux_conf_theme_status_right_fg='#8a8a8a,#e4e4e4,#82A1F1'
 tmux_conf_theme_status_right_bg='#080808,#d70000,#e4e4e4'
 tmux_conf_theme_status_right_attr='none,none,bold'
 
@@ -110,7 +110,7 @@ tmux_conf_battery_vbar_palette='gradient'
 tmux_conf_battery_status_charging='↑'       # U+2191
 tmux_conf_battery_status_discharging='↓'    # U+2193
 
-tmux_conf_theme_clock_colour='#87afaf'
+tmux_conf_theme_clock_colour='#3C425F'
 tmux_conf_theme_clock_style='24'
 
 tmux_conf_copy_to_os_clipboard=false
@@ -122,4 +122,4 @@ setw -g mode-keys vi
 set -g default-terminal "screen-256color"
 set -ga terminal-overrides ",*256col*:Tc"
 
-bind-key -n C-l send-keys -R \; clear-history
+bind-key -n C-S-l send-keys -R \; clear-history
