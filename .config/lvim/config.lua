@@ -10,8 +10,7 @@ vim.opt.tabstop = 4 -- insert 4 spaces for a tab
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
-lvim.builtin.alpha.active = true
-lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.alpha.active = false
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
