@@ -1,40 +1,11 @@
-runtime ./plug.vim
-runtime ./maps.vim
+" Copy
+vnoremap <leader>c "+y
+nnoremap <leader>c "+y
 
-" Fuck 'em annoying bells
-set belloff=all
+" Cut
+vnoremap <leader>x "+d
+nnoremap <leader>x "+d
 
-set t_Co=256
-syntax enable
-
-if (has('termguicolors'))
-	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-	set termguicolors
-endif
-
-set number
-let g:seoul256_background=234
-colorscheme seoul256
-set background=dark
-set colorcolumn=80
-
-set notagrelative
-
-" Allow left arrow, right arrow, h and l to move to the previous/next line
-set ww=<,>,h,l
-
-" File format
-set ff=unix
-
-set nowrap
-
-" Loads indent.vim. The result is when a file is edited its indent file is
-" loaded
-filetype plugin indent on
-set autoindent
-set expandtab
-set shiftwidth=4
-set softtabstop=4
-
-runtime macros/matchit.vim
+" Paste
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P

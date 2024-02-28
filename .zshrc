@@ -21,8 +21,8 @@ zle -N zle-line-init
 
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 
-#zle_highlight=(default:bold)
-#zle_highlight=(none)
+zle_highlight=(default:bold)
+zle_highlight=(none)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -42,7 +42,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # macOS
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /opt/homebrew/Cellar/fzf/0.37.0/shell/key-bindings.zsh
 # Debian
 #source /usr/share/doc/fzf/examples/key-bindings.zsh
 # Fedora
@@ -50,3 +50,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# bun completions
+[ -s "/Users/dimitri/.bun/_bun" ] && source "/Users/dimitri/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

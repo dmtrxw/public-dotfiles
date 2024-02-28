@@ -123,3 +123,4 @@ set -g default-terminal "screen-256color"
 set -ga terminal-overrides ",*256col*:Tc"
 
 bind-key -n C-S-l send-keys -R \; clear-history
+
