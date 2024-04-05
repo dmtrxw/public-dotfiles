@@ -33,10 +33,3 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export PATH=$HOME/bin:$PATH
-
-# macOS
-source /opt/homebrew/Cellar/fzf/0.37.0/shell/key-bindings.zsh
-# Debian
-#source /usr/share/doc/fzf/examples/key-bindings.zsh
-# Fedora
-#source /usr/share/fzf/shell/key-bindings.zsh
