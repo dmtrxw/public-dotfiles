@@ -9,7 +9,7 @@ vim.opt.clipboard = ""
 vim.opt.splitbelow = true -- force all horizontal splits to go below current window
 vim.opt.splitright = true -- force all vertical splits to go to the right of current window
 vim.opt.showtabline = 0   -- hide tabs
-vim.opt.relativenumber = true
+vim.opt.cursorline = false
 vim.diagnostic.config({ virtual_text = false })
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
@@ -36,6 +36,7 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.cmp.experimental.ghost_text = false
 lvim.builtin.cmp.completion.autocomplete = false
 lvim.builtin.cmp.completion.completeopt = 'menu,menuone,noinsert'
+lvim.builtin.indentlines.active = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
