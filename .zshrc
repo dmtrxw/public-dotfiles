@@ -8,9 +8,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# Homebrew
-export PATH=/opt/homebrew/bin:$PATH
-
 # Start zsh in NORMAL mode
 zle-line-init() {
   zle -K vicmd;
@@ -22,9 +19,12 @@ VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 zle_highlight=(default:bold)
 zle_highlight=(none)
 
+if [ -d "/opt/homebrew/bin" ] ; then
+    export PATH="/opt/homebrew/bin:$PATH"
+fi
 
 if [ -d "$HOME/.local/bin" ] ; then
-    export PATH="$HOME/.local/bin:$PATH"
+    export PATH="$PATH:$HOME/.local/bin"
 fi
 
 if [ -d "$HOME/bin" ] ; then
@@ -39,7 +39,9 @@ if [ -d "$HOME/.cargo/bin" ] ; then
     export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
+# Aliases
 alias sq="npx sequelize-cli"
+alias npkill="npx npkill"
 
 # Node Version Manager
 export NVM_DIR="$HOME/.nvm"
